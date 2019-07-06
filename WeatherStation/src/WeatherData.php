@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace WeatherStation;
 
-class WeatherData implements SubjectInterface
+use SplSubject;
+use SplObserver;
+
+class WeatherData implements SplSubject
 {
     /**
      * @var array
@@ -26,12 +29,12 @@ class WeatherData implements SubjectInterface
      */
     private $pressure;
 
-    public function registerObserver(ObserverInterface $observer): void
+    public function attach(SplObserver $observer): void
     {
         $this->observers[] = $observer;
     }
 
-    public function removeObserver(ObserverInterface $observer): void
+    public function detach(SplObserver $observer): void
     {
         foreach ($this->observers as $index => $thisObserver) {
             if ($thisObserver == $observer) {
@@ -40,16 +43,16 @@ class WeatherData implements SubjectInterface
         }
     }
 
-    public function notifyObservers(): void
+    public function notify(): void
     {
         foreach ($this->observers as $observer) {
-            $observer->update($this->temperature, $this->himidity, $this->pressure);
+            $observer->update($this);
         }
     }
 
     public function measurementsChanged(): void
     {
-        $this->notifyObservers();
+        $this->notify();
     }
 
     public function setMeasurements(float $temperature, float $himidity, float $pressure): void
@@ -59,5 +62,20 @@ class WeatherData implements SubjectInterface
         $this->pressure = $pressure;
 
         $this->measurementsChanged();
+    }
+
+    public function getTemperature(): float
+    {
+        return $this->temperature;
+    }
+
+    public function getHimidity(): float
+    {
+        return $this->himidity;
+    }
+
+    public function getPressure(): float
+    {
+        return $this->pressure;
     }
 }

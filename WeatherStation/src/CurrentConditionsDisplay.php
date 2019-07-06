@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace WeatherStation;
 
-class CurrentConditionsDisplay implements ObserverInterface, DisplayElementInterface
+use SplObserver;
+use SplSubject;
+
+class CurrentConditionsDisplay implements SplObserver, DisplayElementInterface
 {
     /**
      * @var float
@@ -17,22 +20,24 @@ class CurrentConditionsDisplay implements ObserverInterface, DisplayElementInter
     private $himidity;
 
     /**
-     * @var SubjectInterface
+     * @var SplSubject
      */
     private $weatherData;
 
-    public function __construct(SubjectInterface $weatherData)
+    public function __construct(SplSubject $weatherData)
     {
         $this->weatherData = $weatherData;
-        $this->weatherData->registerObserver($this);
+        $this->weatherData->attach($this);
     }
 
-    public function update(float $temperature, float $himidity, float $pressure): void
+    public function update(SplSubject $subject): void
     {
-        $this->temperature = $temperature;
-        $this->himidity = $himidity;
+        if ($subject instanceof WeatherData) {
+            $this->temperature = $subject->getTemperature();
+            $this->himidity = $subject->getHimidity();
 
-        $this->display();
+            $this->display();
+        }
     }
 
     public function display(): void
