@@ -38,6 +38,6 @@ abstract class AbstractDuck
 
     public function swim(): void
     {
-        echo 'All ducks float, even decoys!';
+        echo 'All ducks float, even decoys!' . PHP_EOL;
     }
 }
