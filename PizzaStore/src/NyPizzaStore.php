@@ -2,25 +2,25 @@
 
 namespace PizzaStore;
 
-class SimplePizzaFactory
+class NyPizzaStore extends AbstractPizzaStore
 {
     public function createPizza(string $type): AbstractPizza
     {
         switch ($type) {
             case 'cheese':
-                $pizza = new CheesePizza();
+                $pizza = new NyStyleCheesePizza();
                 break;
 
             case 'pepperoni':
-                $pizza = new PepperoniPizza();
+                $pizza = new NyStylePepperoniPizza();
                 break;
 
             case 'clam':
-                $pizza = new ClamPizza();
+                $pizza = new NyStyleClamPizza();
                 break;
 
             case 'veggie':
-                $pizza = new VeggiePizza();
+                $pizza = new NyStyleVeggiePizza();
                 break;
 
             default:
