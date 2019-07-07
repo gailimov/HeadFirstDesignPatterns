@@ -13,4 +13,9 @@ abstract class AbstractCondimentDecorator extends AbstractBeverage
     {
         $this->beverage = $beverage;
     }
+
+    public function getDescription(): string
+    {
+        return $this->beverage->getDescription() . ', ' . $this->description;
+    }
 }

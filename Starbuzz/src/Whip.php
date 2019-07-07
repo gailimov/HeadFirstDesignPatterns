@@ -10,7 +10,7 @@ class Whip extends AbstractCondimentDecorator
     {
         parent::__construct($beverage);
 
-        $this->description = $this->beverage->getDescription() . ', Whip';
+        $this->description = 'Whip';
     }
 
     public function cost(): float

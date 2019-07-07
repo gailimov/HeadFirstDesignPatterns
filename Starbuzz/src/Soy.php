@@ -10,7 +10,7 @@ class Soy extends AbstractCondimentDecorator
     {
         parent::__construct($beverage);
 
-        $this->description = $this->beverage->getDescription() . ', Soy';
+        $this->description = 'Soy';
     }
 
     public function cost(): float

@@ -10,7 +10,7 @@ class Mocha extends AbstractCondimentDecorator
     {
         parent::__construct($beverage);
 
-        $this->description = $this->beverage->getDescription() . ', Mocha';
+        $this->description = 'Mocha';
     }
 
     public function cost(): float
