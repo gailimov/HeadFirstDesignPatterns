@@ -8,13 +8,9 @@ class Soy extends AbstractCondimentDecorator
 {
     public function __construct(AbstractBeverage $beverage)
     {
-        parent::__construct($beverage);
-
         $this->description = 'Soy';
-    }
+        $this->cost = .15;
 
-    public function cost(): float
-    {
-        return .15 + $this->beverage->cost();
+        parent::__construct($beverage);
     }
 }

@@ -9,10 +9,8 @@ class HouseBlend extends AbstractBeverage
     public function __construct()
     {
         $this->description = 'House Blend Coffee';
-    }
+        $this->cost = .89;
 
-    public function cost(): float
-    {
-        return .89;
+        parent::__construct();
     }
 }

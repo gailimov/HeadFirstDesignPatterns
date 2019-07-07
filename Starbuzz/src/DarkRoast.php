@@ -9,10 +9,8 @@ class DarkRoast extends AbstractBeverage
     public function __construct()
     {
         $this->description = 'Dark Roast Coffee';
-    }
+        $this->cost = .99;
 
-    public function cost(): float
-    {
-        return .99;
+        parent::__construct();
     }
 }

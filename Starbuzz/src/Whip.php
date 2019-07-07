@@ -8,13 +8,9 @@ class Whip extends AbstractCondimentDecorator
 {
     public function __construct(AbstractBeverage $beverage)
     {
-        parent::__construct($beverage);
-
         $this->description = 'Whip';
-    }
+        $this->cost = .10;
 
-    public function cost(): float
-    {
-        return .10 + $this->beverage->cost();
+        parent::__construct($beverage);
     }
 }

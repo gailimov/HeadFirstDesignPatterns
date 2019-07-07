@@ -8,13 +8,9 @@ class Mocha extends AbstractCondimentDecorator
 {
     public function __construct(AbstractBeverage $beverage)
     {
-        parent::__construct($beverage);
-
         $this->description = 'Mocha';
-    }
+        $this->cost = .20;
 
-    public function cost(): float
-    {
-        return .20 + $this->beverage->cost();
+        parent::__construct($beverage);
     }
 }

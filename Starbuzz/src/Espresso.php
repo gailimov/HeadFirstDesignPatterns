@@ -9,10 +9,8 @@ class Espresso extends AbstractBeverage
     public function __construct()
     {
         $this->description = 'Espresso';
-    }
+        $this->cost = 1.99;
 
-    public function cost(): float
-    {
-        return 1.99;
+        parent::__construct();
     }
 }
