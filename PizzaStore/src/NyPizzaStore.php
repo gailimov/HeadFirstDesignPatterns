@@ -2,29 +2,28 @@
 
 namespace PizzaStore;
 
+use PizzaStore\Pizza\{AbstractPizza, CheesePizza, ClamPizza};
+use PizzaStore\Pizza\Ingridient\NyPizzaIngridientFactory;
+
 class NyPizzaStore extends AbstractPizzaStore
 {
     public function createPizza(string $type): AbstractPizza
     {
+        $ingridientFactory = new NyPizzaIngridientFactory();
+
         switch ($type) {
             case 'cheese':
-                $pizza = new NyStyleCheesePizza();
-                break;
-
-            case 'pepperoni':
-                $pizza = new NyStylePepperoniPizza();
+                $pizza = new CheesePizza($ingridientFactory);
+                $pizza->setName('New York Style Cheese Pizza');
                 break;
 
             case 'clam':
-                $pizza = new NyStyleClamPizza();
-                break;
-
-            case 'veggie':
-                $pizza = new NyStyleVeggiePizza();
+                $pizza = new ClamPizza($ingridientFactory);
+                $pizza->setName('New York Style Clam Pizza');
                 break;
 
             default:
-                throw new \Exception('Our menu don\'t have this kind of pizza');
+                throw new \Exception(sprintf("Our menu doesn't have %s pizza", $type));
         }
 
         return $pizza;

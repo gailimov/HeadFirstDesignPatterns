@@ -2,6 +2,8 @@
 
 namespace PizzaStore;
 
+use PizzaStore\Pizza\AbstractPizza;
+
 abstract class AbstractPizzaStore
 {
     public function orderPizza(string $type): AbstractPizza
