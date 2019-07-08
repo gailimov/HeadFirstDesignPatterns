@@ -1,0 +1,13 @@
+{
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HeadFirstDesignPatterns\\SimUDuck\\": "SimUDuck/src/",
+            "HeadFirstDesignPatterns\\WeatherStation\\": "WeatherStation/src/",
+            "HeadFirstDesignPatterns\\Starbuzz\\": "Starbuzz/src/",
+            "HeadFirstDesignPatterns\\PizzaStore\\": "PizzaStore/src/"
+        }
+    }
+}

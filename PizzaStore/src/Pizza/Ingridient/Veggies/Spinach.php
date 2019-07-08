@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient\Veggies;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Veggies;
 
 class Spinach
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient;
 
-use PizzaStore\Pizza\Ingridient\Dough\DoughInterface;
-use PizzaStore\Pizza\Ingridient\Sauce\SauceInterface;
-use PizzaStore\Pizza\Ingridient\Cheese\CheeseInterface;
-use PizzaStore\Pizza\Ingridient\Pepperoni\PepperoniInterface;
-use PizzaStore\Pizza\Ingridient\Clams\ClamsInterface;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Dough\DoughInterface;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Sauce\SauceInterface;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Cheese\CheeseInterface;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Pepperoni\PepperoniInterface;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Clams\ClamsInterface;
 
 interface PizzaIngridientFactoryInterface
 {

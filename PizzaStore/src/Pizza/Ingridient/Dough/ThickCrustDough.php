@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient\Dough;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Dough;
 
 class ThickCrustDough implements DoughInterface
 {

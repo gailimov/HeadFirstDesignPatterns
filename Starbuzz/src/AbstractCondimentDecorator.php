@@ -1,6 +1,6 @@
 <?php
 
-namespace Starbuzz;
+namespace HeadFirstDesignPatterns\Starbuzz;
 
 abstract class AbstractCondimentDecorator extends AbstractBeverage
 {

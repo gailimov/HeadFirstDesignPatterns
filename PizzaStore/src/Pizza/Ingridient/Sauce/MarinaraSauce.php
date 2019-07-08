@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient\Sauce;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Sauce;
 
 class MarinaraSauce implements SauceInterface
 {

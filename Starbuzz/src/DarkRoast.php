@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Starbuzz;
+namespace HeadFirstDesignPatterns\Starbuzz;
 
 class DarkRoast extends AbstractBeverage
 {

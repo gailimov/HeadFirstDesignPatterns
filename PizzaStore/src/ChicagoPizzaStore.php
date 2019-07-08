@@ -1,9 +1,9 @@
 <?php
 
-namespace PizzaStore;
+namespace HeadFirstDesignPatterns\PizzaStore;
 
-use PizzaStore\Pizza\{AbstractPizza, CheesePizza, ClamPizza};
-use PizzaStore\Pizza\Ingridient\ChicagoPizzaIngridientFactory;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\{AbstractPizza, CheesePizza, ClamPizza};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\ChicagoPizzaIngridientFactory;
 
 class ChicagoPizzaStore extends AbstractPizzaStore
 {

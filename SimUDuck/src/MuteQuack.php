@@ -1,6 +1,6 @@
 <?php
 
-namespace SimUDuck;
+namespace HeadFirstDesignPatterns\SimUDuck;
 
 class MuteQuack implements QuackBehaviorInterface
 {

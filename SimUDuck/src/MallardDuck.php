@@ -1,6 +1,6 @@
 <?php
 
-namespace SimUDuck;
+namespace HeadFirstDesignPatterns\SimUDuck;
 
 class MallardDuck extends AbstractDuck
 {
@@ -12,6 +12,6 @@ class MallardDuck extends AbstractDuck
 
     public function display(): void
     {
-        echo 'I\'m real Mallard duck' . PHP_EOL;
+        echo 'I\'m a real Mallard duck' . PHP_EOL;
     }
 }

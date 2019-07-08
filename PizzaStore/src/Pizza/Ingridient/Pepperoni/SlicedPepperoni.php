@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient\Pepperoni;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Pepperoni;
 
 class SlicedPepperoni implements PepperoniInterface
 {

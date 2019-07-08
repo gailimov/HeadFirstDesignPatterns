@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza;
 
 class ClamPizza extends AbstractPizza
 {

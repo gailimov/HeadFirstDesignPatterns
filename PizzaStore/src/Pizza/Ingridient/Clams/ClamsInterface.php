@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient\Clams;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Clams;
 
 interface ClamsInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient\Cheese;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Cheese;
 
 class Mozzarella implements CheeseInterface
 {

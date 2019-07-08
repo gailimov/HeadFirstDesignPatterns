@@ -1,8 +1,8 @@
 <?php
 
-use Starbuzz\{Espresso, DarkRoast, HouseBlend, Mocha, Whip, Soy};
+use HeadFirstDesignPatterns\Starbuzz\{Espresso, DarkRoast, HouseBlend, Mocha, Whip, Soy};
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $beverage = new Espresso();
 echo $beverage->getDescription() . ' $' . $beverage->getCost() . PHP_EOL;

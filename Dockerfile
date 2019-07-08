@@ -6,4 +6,4 @@ COPY --from=composer:1.8 /usr/bin/composer /usr/bin/composer
 COPY . /app
 WORKDIR /app
 
-CMD [ "tail", "-f", "/dev/null" ]
+CMD sh -c "composer install && tail -f /dev/null"

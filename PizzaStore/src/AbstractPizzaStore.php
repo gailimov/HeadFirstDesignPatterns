@@ -1,8 +1,8 @@
 <?php
 
-namespace PizzaStore;
+namespace HeadFirstDesignPatterns\PizzaStore;
 
-use PizzaStore\Pizza\AbstractPizza;
+use HeadFirstDesignPatterns\PizzaStore\Pizza\AbstractPizza;
 
 abstract class AbstractPizzaStore
 {

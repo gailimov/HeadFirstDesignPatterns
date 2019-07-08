@@ -1,13 +1,13 @@
 <?php
 
-namespace PizzaStore\Pizza\Ingridient;
+namespace HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient;
 
-use PizzaStore\Pizza\Ingridient\Dough\{DoughInterface, ThickCrustDough};
-use PizzaStore\Pizza\Ingridient\Sauce\{SauceInterface, PlumTomatoSauce};
-use PizzaStore\Pizza\Ingridient\Cheese\{CheeseInterface, Mozzarella};
-use PizzaStore\Pizza\Ingridient\Pepperoni\{PepperoniInterface, SlicedPepperoni};
-use PizzaStore\Pizza\Ingridient\Clams\{ClamsInterface, FrozenClams};
-use PizzaStore\Pizza\Ingridient\Veggies\{BlackOlives, Spinach, EggPlant};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Dough\{DoughInterface, ThickCrustDough};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Sauce\{SauceInterface, PlumTomatoSauce};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Cheese\{CheeseInterface, Mozzarella};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Pepperoni\{PepperoniInterface, SlicedPepperoni};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Clams\{ClamsInterface, FrozenClams};
+use HeadFirstDesignPatterns\PizzaStore\Pizza\Ingridient\Veggies\{BlackOlives, Spinach, EggPlant};
 
 class ChicagoPizzaIngridientFactory implements PizzaIngridientFactoryInterface
 {
